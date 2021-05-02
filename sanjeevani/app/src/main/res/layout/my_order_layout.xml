@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="4.0dip"
+    android:layout_marginBottom="4.0dip"
+    android:background="#ffffffff"
+    android:elevation="3.0dip">
+
+    <ImageView
+        android:id="@+id/product_image_order1"
+        android:layout_width="80.0dip"
+        android:layout_height="80.0dip"
+        android:layout_marginTop="16.0dip"
+        android:layout_marginEnd="16.0dip"
+        android:layout_marginBottom="16dp"
+        android:src="@drawable/books"
+        app:layout_constraintBottom_toTopOf="@+id/rating_devider1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/product_title_order_d1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16.0dip"
+        android:layout_marginTop="16.0dip"
+        android:text="Gemini Oil"
+        android:textColor="#ff000000"
+        android:textSize="16.0sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/order_satus_indicater1"
+        android:layout_width="10.0dip"
+        android:layout_height="10.0dip"
+        android:layout_marginStart="16.0dip"
+        android:layout_marginTop="16.0dip"
+        android:tint="#ff78ff00"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/product_title_order_d1"
+        app:srcCompat="@drawable/default_dot" />
+
+    <TextView
+        android:id="@+id/order_delivered_date1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8.0dip"
+        android:text="Delivered on 15 jan 2020"
+        android:textSize="12.0sp"
+        app:layout_constraintBottom_toBottomOf="@id/order_satus_indicater1"
+        app:layout_constraintStart_toEndOf="@id/order_satus_indicater1"
+        app:layout_constraintTop_toTopOf="@id/order_satus_indicater1" />
+
+    <View
+        android:id="@+id/rating_devider1"
+        android:layout_width="409.0dip"
+        android:layout_height="1.0dip"
+        android:layout_marginStart="1.0dip"
+        android:layout_marginTop="8.0dip"
+        android:layout_marginEnd="1.0dip"
+        android:layout_marginBottom="8dp"
+        android:background="?android:listDivider"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/product_image_order1" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

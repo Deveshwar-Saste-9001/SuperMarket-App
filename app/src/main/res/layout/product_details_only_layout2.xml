@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/product_details_only_container1"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="8.0dip"
+    android:layout_marginBottom="8.0dip"
+    android:background="#ffffffff"
+    android:elevation="3.0dip"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/product_details_only_title1"
+        android:layout_width="0.0dip"
+        android:layout_height="wrap_content"
+        android:background="#ffd4d4d4"
+        android:padding="16.0dip"
+        android:text="Product Detail"
+        android:textColor="#ff9c9c9c"
+        android:textSize="16.0sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/Product_Details_only_body1"
+        android:layout_width="0.0dip"
+        android:layout_height="wrap_content"
+        android:padding="16.0dip"
+        android:text="hfsdjfgsdjgfsdfsdjfdjjhfdjhfkdhgdfkjhgdfkhgdfkhgkdhgkdfhgkdfhkjdhjkdhgkdhgfdhfdkhdf gvdsjgfsdgfjdsgfdsjgfjdsgfhgfdgfjdgfjdf sdhgcdsjgsdjgfsdjgfsdgfdgfdsjhfdsgf kshdsdhhgdsgjhgfhjgfdghfxdgfjhgfb kjhgscjhsgjhgdgfdsjgfhdgf kjsdgcjdghjdgbdhgfhdshf kjshdjkdshjdshfjdskhfdsjkfhdsjkfhdsjkfhdskjfhsdkdjfhsdkfsdgh kdghvjdsgfdsjkgvjdskgfkjdsfhkdsjfhjdskfhdskjfhsd ksjhckdshfkdshfjkdsfhsdkjfhdskjbcjdskcbjkdsckjds khsdhdfjshfkjdsfjhd"
+        android:textColor="#ff000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/product_details_only_title1" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="4.0dip"
+    android:layout_marginBottom="4.0dip"
+    android:background="#ffffffff"
+    android:elevation="3.0dip">
+
+    <TextView
+        android:id="@+id/textView41"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16.0dip"
+        android:layout_marginTop="16.0dip"
+        android:text="SHIPPING DETAIL"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/divider91"
+        android:layout_width="0.0dip"
+        android:layout_height="1.0dip"
+        android:layout_marginTop="16.0dip"
+        android:background="?android:listDivider"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textView41" />
+
+    <TextView
+        android:id="@+id/fullname_order1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16.0dip"
+        android:layout_marginTop="16.0dip"
+        android:text="full name"
+        android:textColor="#ff000000"
+        android:textSize="16.0sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/divider91" />
+
+    <TextView
+        android:id="@+id/adress_order1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16.0dip"
+        android:layout_marginTop="16.0dip"
+        android:text="shipping Address"
+        android:textColor="#ff000000"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/fullname_order1" />
+
+    <TextView
+        android:id="@+id/pincode_order1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16.0dip"
+        android:layout_marginTop="8.0dip"
+        android:layout_marginBottom="16.0dip"
+        android:text="pincode"
+        android:textColor="#ff000000"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@id/change_or_add_adress1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/adress_order1" />
+
+    <Button
+        android:id="@+id/change_or_add_adress1"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="16.0dip"
+        android:layout_marginEnd="16.0dip"
+        android:layout_marginBottom="8.0dip"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:text="Change Or Add New Address"
+        android:textColor="#ffffffff"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

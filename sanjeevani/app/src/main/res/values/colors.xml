@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#BF007A</color>
+    <color name="colorPrimaryDark">#BF007A</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="colorRed">#F00000</color>
+    <color name="successGreen">#11A10c</color>
+    <color name="RecyclerViewBack">#b6b6b6</color>
+    <color name="voilate">#ff5b04b1</color>
+    <color name="coupencolor">#ff4408e9</color>
+    <color name="coupenRed">#ffff3030</color>
+</resources>

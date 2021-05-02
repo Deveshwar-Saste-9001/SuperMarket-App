@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="8.0dip"
+    android:layout_marginBottom="8.0dip"
+    android:background="#ffffffff"
+    android:elevation="3.0dip"
+    android:foreground="?attr/selectableItemBackground">
+
+    <TextView
+        android:id="@+id/Name_myad1"
+        android:layout_width="0.0dip"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16.0dip"
+        android:layout_marginTop="16.0dip"
+        android:layout_marginEnd="16.0dip"
+        android:text="Full Name"
+        android:textColor="#ff000000"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@id/icon_view_myad1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/address_myad1"
+        android:layout_width="0.0dip"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16.0dip"
+        android:layout_marginTop="16.0dip"
+        android:layout_marginEnd="16.0dip"
+        android:text="Address"
+        android:textColor="#ff000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/Name_myad1" />
+
+    <TextView
+        android:id="@+id/pincode_myad1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16.0dip"
+        android:layout_marginTop="8.0dip"
+        android:layout_marginBottom="16.0dip"
+        android:text="Pincode"
+        android:textColor="#ff000000"
+        android:textSize="12.0sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/address_myad1" />
+
+    <ImageView
+        android:id="@+id/icon_view_myad1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="16.0dip"
+        android:paddingEnd="16.0dip"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_check_black_24dp" />
+
+    <LinearLayout
+        android:id="@+id/option_container_myad1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16.0dip"
+        android:layout_marginEnd="16.0dip"
+        android:background="#ffd6d6d6"
+        android:elevation="3.0dip"
+        android:orientation="vertical"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textView251"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="16.0dip"
+            android:paddingTop="6.0dip"
+            android:paddingEnd="16.0dip"
+            android:paddingBottom="6.0dip"
+            android:text="Edit"
+            android:textAlignment="center"
+            android:textSize="12.0sp" />
+
+        <TextView
+            android:id="@+id/textView261"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="16.0dip"
+            android:paddingTop="6.0dip"
+            android:paddingEnd="16.0dip"
+            android:paddingBottom="6.0dip"
+            android:text="Remove"
+            android:textAlignment="center"
+            android:textSize="12.0sp" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

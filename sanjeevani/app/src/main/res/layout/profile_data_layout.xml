@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffffff">
+
+    <LinearLayout
+        android:id="@+id/linearLayout61"
+        android:layout_width="0.0dip"
+        android:layout_height="200.0dip"
+        android:background="@color/colorPrimaryDark"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profile_image_acc1"
+        android:layout_width="100.0dip"
+        android:layout_height="100.0dip"
+        android:elevation="4dp"
+        android:src="@drawable/profile"
+        app:civ_border_color="#ffffffff"
+        app:civ_border_width="5.0dip"
+        app:layout_constraintBottom_toBottomOf="@id/linearLayout61"
+        app:layout_constraintEnd_toEndOf="@id/linearLayout61"
+        app:layout_constraintStart_toStartOf="@id/linearLayout61"
+        app:layout_constraintTop_toTopOf="@id/linearLayout61" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout71"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16.0dip"
+        android:layout_marginBottom="16.0dip"
+        android:background="@drawable/buttons"
+        android:backgroundTint="#ffffffff"
+        android:elevation="4dp"
+        android:orientation="vertical"
+        android:padding="8.0dip"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/profile_image_acc1">
+
+        <TextView
+            android:id="@+id/user_name_acc1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8.0dip"
+            android:text="User Name"
+            android:textAlignment="center"
+            android:textColor="#ff000000"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/user_email_acc1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="User@gmail.com"
+            android:textAlignment="center" />
+    </LinearLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/setting_btn_acc1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16.0dip"
+        android:backgroundTint="#ffffffff"
+        android:clickable="true"
+        android:elevation="4dp"
+        android:tint="@color/colorPrimary"
+        app:layout_constraintBottom_toBottomOf="@id/linearLayout71"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/linearLayout71"
+        app:rippleColor="@color/colorPrimaryDark"
+        app:srcCompat="@drawable/ic_settings_black_24dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>

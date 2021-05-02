@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.Product_Description_fragment">
+
+
+    <TextView
+        android:id="@+id/tv_product_Description_text1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16.0dip"
+        android:text="ksfbcskjfvbhkjjjjjjjjjjjjjjjjjjjjjjjjcxhvbdsjkcb jkzdsmxbvjjsdbvkjxb xm cxx xc, xcbnsncmsdbcskmcbsdkc,bsdkcdc sljchnsjxvnx,mvxcnv,dzvnxcvndv,mcxnvvvvvvvvvvvvv,,,,,,,,,,,,,,m smcbvxcjmbdxckdm,bvnxck,xmcvvdjvkkkkkkkkkkkkkkkkkkkkkjvdskkkkkkkk skmdcbsxk,csxjl,s.xvdjvvvvvvvvvvvvvvvvvvvvvvvvvvvvvkcxmx khhmbnvcxkmbsx,zcnzx,.cnsd,zxmczx"
+        android:textColor="#ff000000" />
+
+</FrameLayout>

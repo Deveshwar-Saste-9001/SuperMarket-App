@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddAdressActivity">
+
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout61"
+        android:layout_width="0.0dip"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/Add_Address_toolbar"
+            android:layout_width="fill_parent"
+            android:layout_height="?actionBarSize"
+            android:background="?colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <ScrollView
+        android:layout_width="0.0dip"
+        android:layout_height="0.0dip"
+        android:nestedScrollingEnabled="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/appBarLayout61">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imageView21"
+                android:layout_width="100.0dip"
+                android:layout_height="100.0dip"
+                android:layout_gravity="center"
+                android:layout_marginTop="16.0dip"
+                android:layout_marginBottom="16.0dip"
+                app:srcCompat="@drawable/ic_add_location_black_24dp" />
+
+            <EditText
+                android:id="@+id/city_adress1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16.0dip"
+                android:layout_marginEnd="16.0dip"
+                android:ems="10"
+                android:hint="City*"
+                android:inputType="textPersonName"
+                android:textColor="@color/colorPrimaryDark" />
+
+            <EditText
+                android:id="@+id/Area_address1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16.0dip"
+                android:layout_marginTop="8.0dip"
+                android:layout_marginEnd="16.0dip"
+                android:ems="10"
+                android:gravity="start"
+                android:hint="Area"
+                android:inputType="textMultiLine"
+                android:lines="3"
+                android:nestedScrollingEnabled="true"
+                android:textColor="@color/colorPrimaryDark" />
+
+            <EditText
+            android:id="@+id/flat_no_address1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16.0dip"
+            android:layout_marginTop="8.0dip"
+            android:layout_marginEnd="16.0dip"
+            android:ems="10"
+            android:hint="Flat no.,Buiding name"
+            android:inputType="textMultiLine"
+            android:lines="3"
+            android:nestedScrollingEnabled="true"
+            android:textColor="@color/colorPrimaryDark" />
+            <EditText
+                android:id="@+id/flowerNo"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16.0dip"
+                android:layout_marginTop="8.0dip"
+                android:layout_marginEnd="16.0dip"
+                android:ems="10"
+                android:hint="Floor Number"
+                android:inputType="textMultiLine"
+                android:lines="1"
+                android:nestedScrollingEnabled="true"
+                android:textColor="@color/colorPrimaryDark" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8.0dip"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/pincode_adress1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16.0dip"
+                    android:layout_marginEnd="8.0dip"
+                    android:layout_weight="1.0"
+                    android:ems="10"
+                    android:hint="Pincode"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:inputType="number" />
+
+                <EditText
+                    android:id="@+id/state_adress1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="16.0dip"
+                    android:layout_weight="1.0"
+                    android:ems="10"
+                    android:hint="State"
+                    android:inputType="text"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:text="Maharashtra" />
+
+
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/landmark_adress1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16.0dip"
+                android:layout_marginTop="8.0dip"
+                android:layout_marginEnd="16.0dip"
+                android:layout_marginBottom="8.0dip"
+                android:ems="10"
+                android:hint="Landmark(optional)"
+                android:textColor="@color/colorPrimaryDark"
+                android:inputType="textPersonName" />
+
+            <View
+                android:id="@+id/divider101"
+                android:layout_width="fill_parent"
+                android:layout_height="1.0dip"
+                android:background="?android:listDivider" />
+
+            <EditText
+                android:id="@+id/name_adress1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16.0dip"
+                android:layout_marginTop="8.0dip"
+                android:layout_marginEnd="16.0dip"
+                android:ems="10"
+                android:textColor="@color/colorPrimaryDark"
+                android:hint="Name*"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/mobile_address1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16.0dip"
+                android:layout_marginTop="8.0dip"
+                android:layout_marginEnd="16.0dip"
+                android:ems="10"
+                android:hint="Mobile*"
+                android:textColor="@color/colorPrimaryDark"
+                android:inputType="number" />
+
+            <EditText
+                android:id="@+id/alter_mobile_adress1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16.0dip"
+                android:layout_marginTop="8.0dip"
+                android:layout_marginEnd="16.0dip"
+                android:textColor="@color/colorPrimaryDark"
+                android:ems="10"
+                android:hint="alternate mobile number(optional)"
+                android:inputType="number" />
+
+            <Button
+                android:id="@+id/save_botton_add1"
+                android:layout_width="fill_parent"
+                android:layout_height="60.0dip"
+                android:layout_margin="16.0dip"
+                android:backgroundTint="@color/colorPrimaryDark"
+                android:text="Save"
+                android:textColor="#ffffffff" />
+        </LinearLayout>
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

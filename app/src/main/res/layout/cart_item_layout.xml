@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="4.0dip"
+    android:layout_marginBottom="4.0dip"
+    android:background="#ffffffff"
+    android:elevation="3.0dip"
+    android:visibility="visible">
+
+    <ImageView
+        android:id="@+id/product_cart_image1"
+        android:layout_width="100.0dip"
+        android:layout_height="100.0dip"
+        android:layout_marginStart="16.0dip"
+        android:layout_marginTop="16.0dip"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/books" />
+
+    <TextView
+        android:id="@+id/product_cart_title1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16.0dip"
+        android:layout_marginTop="16.0dip"
+        android:layout_marginEnd="16dp"
+        android:text="NutriChoice Hy fibre(Nutri Grain)"
+        android:textColor="#ff000000"
+        android:textSize="16.0sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/product_cart_image1"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/Free_coupen_cart_icon1"
+        android:layout_width="15.0dip"
+        android:layout_height="15.0dip"
+        android:tint="#ff8000ff"
+        app:layout_constraintBottom_toBottomOf="@id/tv_free_cart_coupen1"
+        app:layout_constraintStart_toStartOf="@id/product_cart_title1"
+        app:layout_constraintTop_toTopOf="@id/tv_free_cart_coupen1"
+        app:srcCompat="@drawable/ic_loyalty_black_24dp" />
+
+    <TextView
+        android:id="@+id/tv_free_cart_coupen1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Free 2 Coupens"
+        android:textColor="#ff8000ff"
+        android:textSize="12.0sp"
+        app:layout_constraintStart_toEndOf="@id/Free_coupen_cart_icon1"
+        app:layout_constraintTop_toBottomOf="@id/product_cart_title1" />
+
+    <TextView
+        android:id="@+id/product_cart_price1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8.0dip"
+        android:layout_marginEnd="16.0dip"
+        android:text="Rs. 00/-"
+        android:textColor="#ff000000"
+        android:textSize="22.0sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_free_cart_coupen1" />
+
+    <TextView
+        android:id="@+id/cutted_price_cart1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8.0dip"
+        android:text="Rs. 00/-"
+        android:textSize="12.0sp"
+        app:layout_constraintBottom_toBottomOf="@id/product_cart_price1"
+        app:layout_constraintEnd_toStartOf="@id/product_cart_price1" />
+
+    <View
+        android:id="@+id/price_cut_devider1"
+        android:layout_width="0.0dip"
+        android:layout_height="1.0dip"
+        android:background="#80000000"
+        app:layout_constraintBottom_toBottomOf="@id/cutted_price_cart1"
+        app:layout_constraintEnd_toEndOf="@id/cutted_price_cart1"
+        app:layout_constraintStart_toStartOf="@id/cutted_price_cart1"
+        app:layout_constraintTop_toTopOf="@id/cutted_price_cart1" />
+
+    <TextView
+        android:id="@+id/Offers_cart_applied1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16.0dip"
+        android:text="Offers Applied"
+        android:textColor="#ff00e417"
+        android:textSize="12.0sp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/product_cart_price1" />
+
+    <TextView
+        android:id="@+id/coupens_applied_cart1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16.0dip"
+        android:text="Coupens applied"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="12.0sp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/Offers_cart_applied1" />
+
+    <TextView
+        android:id="@+id/product_quantity_cart1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16.0dip"
+        android:background="@drawable/border_background"
+        android:backgroundTint="#ff000000"
+        android:drawableEnd="@drawable/ic_arrow_drop_down_black_24dp"
+        android:drawablePadding="8.0dip"
+        android:padding="3.0dip"
+        android:text="Qty:1"
+        android:textColor="#ff000000"
+        app:layout_constraintBottom_toBottomOf="@id/coupens_applied_cart1"
+        app:layout_constraintStart_toEndOf="@id/product_cart_image1"
+        app:layout_constraintTop_toBottomOf="@id/cutted_price_cart1" />
+
+    <LinearLayout
+        android:id="@+id/cuupen_Redem_layout1_cart"
+        android:layout_width="0.0dip"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8.0dip"
+        android:background="@color/coupenRed"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="8dp"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/coupens_applied_cart1">
+
+        <TextView
+            android:id="@+id/tv_coupen_redimption1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:text="Apply your coupen here"
+            android:textAlignment="center"
+            android:textColor="#ffffffff" />
+
+        <Button
+            android:id="@+id/coupen_redeem_Btn1_cart"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:background="@drawable/border_background"
+            android:text="REDEEM"
+            android:textColor="#ffffffff"
+            android:textSize="10.0sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/Remove_item_btn_cart1"
+        android:layout_width="0.0dip"
+        android:layout_height="50dp"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/gradient2"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/cuupen_Redem_layout1_cart">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:drawableStart="@drawable/ic_delete_black_24dp"
+            android:drawablePadding="4.0dip"
+            android:gravity="center"
+            android:text="Remove item"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/COD_indicator_cart"
+        android:layout_width="50dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="16dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/product_cart_price1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/product_cart_title1"
+        app:srcCompat="@drawable/cashondel" />
+</androidx.constraintlayout.widget.ConstraintLayout>

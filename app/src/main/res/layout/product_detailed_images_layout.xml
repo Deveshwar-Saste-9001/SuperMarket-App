@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:elevation="3dp"
+    android:orientation="vertical">
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/Product_images_viewPager1"
+        android:layout_width="fill_parent"
+        android:layout_height="250dp"
+        android:layout_marginTop="24dip"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/View_pager_indicator1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/Product_images_viewPager1"
+        app:tabBackground="@drawable/dot_selector"
+        app:tabIndicatorHeight="0dp"
+        app:tabRippleColor="@null" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/AddtoWishListButton1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:backgroundTint="@android:color/white"
+        android:clickable="true"
+        android:tint="#ff8d8d8d"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/Product_images_viewPager1"
+        app:rippleColor="@color/colorPrimaryDark"
+        app:srcCompat="@drawable/ic_favorite_black_24dp"
+        tools:ignore="VectorDrawableCompat" />
+
+    <TextView
+        android:id="@+id/Product_title_detail1"
+        android:layout_width="0.0dip"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16.0dip"
+        android:layout_marginEnd="16.0dip"
+        android:text="Product Title"
+        android:textColor="@android:color/black"
+        android:textSize="20.0sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/View_pager_indicator1" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16.0dip"
+        android:layout_marginTop="8.0dip"
+        android:background="@drawable/slider_background"
+        android:backgroundTint="#ff00a00f"
+        android:elevation="3.0dip"
+        android:visibility="gone"
+        android:orientation="horizontal"
+        android:padding="1.0dip"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/Product_title_detail1">
+
+        <TextView
+            android:id="@+id/tv_product_rating_miniView_wish1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="2.0dip"
+            android:layout_marginEnd="2.0dip"
+            android:text="4.5"
+            android:textColor="@android:color/white"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:layout_width="15.0dip"
+            android:layout_height="15.0dip"
+            android:layout_gravity="center"
+            android:layout_marginStart="2.0dip"
+            android:layout_marginEnd="2.0dip"
+            android:src="@drawable/ic_star_black_24dp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/Total_rating_miniView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8.0dip"
+        android:text="Total ratings"
+        android:visibility="gone"
+        android:textSize="12.0sp"
+        app:layout_constraintBottom_toBottomOf="@id/linearLayout1"
+        app:layout_constraintStart_toEndOf="@id/linearLayout1"
+        app:layout_constraintTop_toTopOf="@id/linearLayout1" />
+
+    <TextView
+        android:id="@+id/Product_Price_miniview1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16.0dip"
+        android:layout_marginTop="8.0dip"
+        android:text="Rs. 00/-"
+        android:textColor="@android:color/black"
+        android:textSize="24.0sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/linearLayout1" />
+
+    <TextView
+        android:id="@+id/Cutted_Price_Product1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rs.00/-"
+        app:layout_constraintBottom_toBottomOf="@id/Product_Price_miniview1"
+        app:layout_constraintStart_toEndOf="@id/Product_Price_miniview1"
+        app:layout_constraintTop_toTopOf="@id/Product_Price_miniview1" />
+
+    <View
+        android:id="@+id/divider1"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+
+        android:background="#80000000"
+        app:layout_constraintBottom_toBottomOf="@+id/Cutted_Price_Product1"
+        app:layout_constraintEnd_toEndOf="@+id/Cutted_Price_Product1"
+        app:layout_constraintStart_toStartOf="@+id/Cutted_Price_Product1"
+        app:layout_constraintTop_toTopOf="@+id/Cutted_Price_Product1" />
+
+    <ImageView
+        android:id="@+id/CODindicator1"
+        android:layout_width="70.0dip"
+        android:layout_height="50.0dip"
+        android:layout_marginEnd="16.0dip"
+        app:layout_constraintBottom_toBottomOf="@id/Cutted_Price_Product1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/Product_title_detail1"
+        app:srcCompat="@drawable/cashondel" />
+
+    <TextView
+        android:id="@+id/tv_Cod_indicator1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Available"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="@id/CODindicator1"
+        app:layout_constraintStart_toStartOf="@id/CODindicator1"
+        app:layout_constraintTop_toBottomOf="@+id/CODindicator1" />
+
+    <LinearLayout
+        android:id="@+id/cuupen_Redem_layout1"
+        android:layout_width="0.0dip"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="#ffff3030"
+        android:visibility="gone"
+        android:gravity="right"
+        android:orientation="horizontal"
+        android:padding="16.0dip"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Product_Price_miniview1">
+
+        <TextView
+            android:id="@+id/tv_coupen_redimption1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:text="check Price after Coupenre demption"
+            android:textAlignment="center"
+            android:textColor="#ffffffff" />
+
+        <Button
+            android:id="@+id/coupen_redeem_Btn1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border_background"
+            android:text="REDEEM"
+            android:textColor="#ffffffff"
+            android:textSize="12.0sp" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

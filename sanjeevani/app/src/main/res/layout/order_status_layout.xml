@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffffff">
+
+    <TextView
+        android:id="@+id/TextView11111"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16.0dip"
+        android:layout_marginTop="16.0dip"
+        android:background="@drawable/buttons"
+        android:backgroundTint="#ffffffff"
+        android:elevation="3dp"
+        android:padding="5.0dip"
+        android:text="your current order status"
+        android:textColor="#ff000000"
+        android:textSize="16.0sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/current_order_acc1"
+        android:layout_width="80.0dip"
+        android:layout_height="80.0dip"
+        android:layout_marginStart="16.0dip"
+        android:layout_marginTop="16.0dip"
+        android:layout_marginEnd="16.0dip"
+        android:elevation="4dp"
+        android:src="@drawable/books"
+        app:civ_border_color="#ff000000"
+        app:civ_border_width="3.0dip"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/TextView11111" />
+
+    <TextView
+        android:id="@+id/tv_current_order_status_acc1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16.0dip"
+        android:layout_marginTop="16.0dip"
+        android:layout_marginEnd="16.0dip"
+        android:background="@drawable/buttons"
+        android:backgroundTint="@color/voilate"
+        android:elevation="4dp"
+        android:padding="5.0dip"
+        android:text="Out For Delivery"
+        android:textColor="#ffffffff"
+        android:textSize="30.0sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/current_order_acc1" />
+
+    <LinearLayout
+        android:layout_width="0.0dip"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16.0dip"
+        android:layout_marginTop="16.0dip"
+        android:layout_marginEnd="16.0dip"
+        android:layout_marginBottom="16.0dip"
+        android:background="@drawable/buttons"
+        android:backgroundTint="#ffffffff"
+        android:elevation="3dp"
+        android:orientation="horizontal"
+        android:padding="5.0dip"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_current_order_status_acc1">
+
+        <ImageView
+            android:id="@+id/orderd_indictor_acc1"
+            android:layout_width="15.0dip"
+            android:layout_height="15.0dip"
+            android:elevation="2.0dip"
+            android:src="@drawable/selected_dot"
+            android:tint="@color/RecyclerViewBack"
+            android:translationX="12.0dip" />
+
+        <ProgressBar
+            android:id="@+id/ordered_acc1"
+            style="?android:progressBarStyleHorizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:progress="0"
+            android:progressBackgroundTint="@color/RecyclerViewBack"
+            android:progressTint="#ff197400"
+            android:translationX="8.0dip" />
+
+        <ImageView
+            android:id="@+id/packed_indicator_acc1"
+            android:layout_width="15.0dip"
+            android:layout_height="15.0dip"
+            android:elevation="2.0dip"
+            android:src="@drawable/selected_dot"
+            android:tint="@color/RecyclerViewBack"
+            android:translationX="4.0dip" />
+
+        <ProgressBar
+            android:id="@+id/packed_acc1"
+            style="?android:progressBarStyleHorizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:progress="0"
+            android:progressBackgroundTint="@color/RecyclerViewBack"
+            android:progressTint="#ff197400" />
+
+        <ImageView
+            android:id="@+id/shiped_indicator_acc1"
+            android:layout_width="15.0dip"
+            android:layout_height="15.0dip"
+            android:elevation="2.0dip"
+            android:src="@drawable/selected_dot"
+            android:tint="@color/RecyclerViewBack"
+            android:translationX="-4.0dip" />
+
+        <ProgressBar
+            android:id="@+id/shipped_acc1"
+            style="?android:progressBarStyleHorizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:progress="0"
+            android:progressBackgroundTint="@color/RecyclerViewBack"
+            android:progressTint="#ff197400"
+            android:translationX="-8.0dip" />
+
+        <ImageView
+            android:id="@+id/delivered_indicater_acc1"
+            android:layout_width="15.0dip"
+            android:layout_height="15.0dip"
+            android:src="@drawable/selected_dot"
+            android:tint="@color/RecyclerViewBack"
+            android:translationX="-12.0dip" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="4.0dip"
+    android:background="#ffd6d6d6"
+    android:orientation="vertical">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout21"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffffff"
+        android:elevation="3.0dip"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textView31"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16.0dip"
+            android:layout_marginTop="16.0dip"
+            android:text="Price Details"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <View
+            android:id="@+id/divider41"
+            android:layout_width="0.0dip"
+            android:layout_height="1.0dip"
+            android:layout_marginTop="16.0dip"
+            android:background="?android:listDivider"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textView31" />
+
+        <TextView
+            android:id="@+id/total_item1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16.0dip"
+            android:layout_marginTop="16.0dip"
+            android:text="Price (2 item)"
+            android:textColor="#ff000000"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/divider41" />
+
+        <TextView
+            android:id="@+id/textView51"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16.0dip"
+            android:layout_marginTop="8.0dip"
+            android:text="Delivery"
+            android:textColor="#ff000000"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/total_item1" />
+
+        <TextView
+            android:id="@+id/total_items_price1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16.0dip"
+            android:layout_marginEnd="16.0dip"
+            android:text="Rs. 10/-"
+            android:textColor="#ff000000"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/divider41" />
+
+        <TextView
+            android:id="@+id/delivery_charge_price1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8.0dip"
+            android:layout_marginEnd="16.0dip"
+            android:text="Free"
+            android:textColor="#ff187400"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/total_items_price1" />
+
+        <View
+            android:id="@+id/divider51"
+            android:layout_width="0.0dip"
+            android:layout_height="1.0dip"
+            android:layout_marginTop="8.0dip"
+            android:background="?android:listDivider"
+            app:layout_constraintEnd_toEndOf="@id/delivery_charge_price1"
+            app:layout_constraintStart_toStartOf="@id/textView51"
+            app:layout_constraintTop_toBottomOf="@id/textView51" />
+
+        <TextView
+            android:id="@+id/textView181"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16.0dip"
+            android:layout_marginTop="8.0dip"
+            android:text="Total Amount"
+            android:textColor="#ff000000"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/divider51" />
+
+        <TextView
+            android:id="@+id/total_price_delivery1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8.0dip"
+            android:layout_marginEnd="16.0dip"
+            android:text="Rs. 10/-"
+            android:textColor="#ff000000"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/divider51" />
+
+        <View
+            android:id="@+id/divider61"
+            android:layout_width="409.0dip"
+            android:layout_height="1.0dip"
+            android:layout_marginTop="16.0dip"
+            android:background="?android:listDivider"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textView181" />
+
+        <TextView
+            android:id="@+id/Saved_Amount1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16.0dip"
+            android:layout_marginTop="16.0dip"
+            android:layout_marginBottom="16.0dip"
+            android:text="you save Rs.5/- on this order"
+            android:textColor="#ff187400"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/divider61" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ImageView
+        android:id="@+id/happy_shopping_image1"
+        android:layout_width="150.0dip"
+        android:layout_height="150.0dip"
+        android:layout_marginStart="16.0dip"
+        android:layout_marginBottom="16.0dip"
+        android:src="@drawable/shoppinghappily"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/constraintLayout21" />
+</androidx.constraintlayout.widget.ConstraintLayout>

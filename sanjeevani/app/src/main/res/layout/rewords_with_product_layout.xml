@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/Reword_layout_container1"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="8.0dip"
+    android:layout_marginBottom="8.0dip"
+    android:background="@drawable/reword_gredint_background"
+    android:elevation="3.0dip"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/Reword_icon_mini1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16.0dip"
+        android:layout_marginTop="16.0dip"
+        android:src="@drawable/ic_card_giftcard_black_24dp"
+        android:tint="#ffffffff"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/Reword_title_product1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8.0dip"
+        android:text="Title"
+        android:textColor="#ffffffff"
+        android:textSize="16.0sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@id/Reword_icon_mini1"
+        app:layout_constraintStart_toEndOf="@id/Reword_icon_mini1"
+        app:layout_constraintTop_toTopOf="@id/Reword_icon_mini1" />
+
+    <TextView
+        android:id="@+id/reword_body_mini1"
+        android:layout_width="0.0dip"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16.0dip"
+        android:layout_marginTop="16.0dip"
+        android:layout_marginEnd="16.0dip"
+        android:layout_marginBottom="16.0dip"
+        android:text="you will got the prise our the lucky custumer of us we will need yod jhsbcjzhbckjzxkzxczx,cnxnczx,cxzl,m"
+        android:textColor="#ffffffff"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/Reword_title_product1" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,125 @@
+{
+  "project_info": {
+    "project_number": "771184875479",
+    "firebase_url": "https://sanjeevanisupermarket.firebaseio.com",
+    "project_id": "sanjeevanisupermarket",
+    "storage_bucket": "sanjeevanisupermarket.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:771184875479:android:ef9d7ffd9b1146e79edd92",
+        "android_client_info": {
+          "package_name": "com.example.sanjeevani"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "771184875479-lj2gjd5tgqusn5a28u3vcvhjkjfhh989.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.sanjeevani",
+            "certificate_hash": "b097b1961ab226e06dba1a379327c0b7329b6863"
+          }
+        },
+        {
+          "client_id": "771184875479-r0j8uo1e9vnmrq08pbj01jqd0e369olu.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.sanjeevani",
+            "certificate_hash": "9c56b5ca023771d3f1f82b4e449f83e9ec962c5b"
+          }
+        },
+        {
+          "client_id": "771184875479-jqfh8ch58s1pmprfrsj967sdno6mhgsd.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.sanjeevani",
+            "certificate_hash": "3480caafb44a4f4113a6ad8d37fc6638b1f2369e"
+          }
+        },
+        {
+          "client_id": "771184875479-j4f4k0sba0dnus419i6lkd6mfk3jen9m.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.sanjeevani",
+            "certificate_hash": "97c0bd70109a317e3a8e2588eb19a8bfe0873d13"
+          }
+        },
+        {
+          "client_id": "771184875479-1f663bheje46bmafljj9v0o24fvcgen2.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.sanjeevani",
+            "certificate_hash": "1b6d1b16adecf30c5bf49a922636bfbbebee1abf"
+          }
+        },
+        {
+          "client_id": "771184875479-2310g0lnp4r9lkj2q0p147rn839kjd8u.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.sanjeevani",
+            "certificate_hash": "fb2786186d21417aaf1fb5f976a48b76241fc93d"
+          }
+        },
+        {
+          "client_id": "771184875479-einudjdl4k89hotf05ahm3vb9cskultc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyADhys5242ZmhQwwHBdn7GveKXOEH3tJ5k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "771184875479-einudjdl4k89hotf05ahm3vb9cskultc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:771184875479:android:c136327626d159d39edd92",
+        "android_client_info": {
+          "package_name": "com.example.sanjeevani_admin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "771184875479-7caism4csddfjskmhrsscormt08uu08l.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.sanjeevani_admin",
+            "certificate_hash": "fb2786186d21417aaf1fb5f976a48b76241fc93d"
+          }
+        },
+        {
+          "client_id": "771184875479-einudjdl4k89hotf05ahm3vb9cskultc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyADhys5242ZmhQwwHBdn7GveKXOEH3tJ5k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "771184875479-einudjdl4k89hotf05ahm3vb9cskultc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
